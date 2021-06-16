@@ -1,0 +1,16 @@
+{
+  "name": "electron-service",
+  "version": "0.1.0",
+  "private": true,
+  "main": "build/index.js",
+  "scripts": {
+    "start": "yarn compile && electron .",
+    "compile": "tsc"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "devDependencies": {
+    "electron": "^13.1.2"
+  }
+}

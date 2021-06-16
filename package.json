@@ -1,0 +1,14 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"yarn start\" \"yarn start-electron\"",
+    "start": "yarn workspace client start",
+    "start-electron": "yarn workspace electron-service start"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "typescript": "^4.1.2"
+  },
+  "workspaces": ["packages/*"]
+}
