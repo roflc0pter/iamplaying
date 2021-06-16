@@ -4,13 +4,16 @@
   "private": true,
   "main": "build/index.js",
   "scripts": {
-    "start": "yarn compile && electron .",
+    "start": "yarn compile && cpx ./src/preload.js ./build && electron .",
     "compile": "tsc"
   },
   "dependencies": {
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "os-utils": "^0.0.14"
   },
   "devDependencies": {
+    "@types/os-utils": "^0.0.1",
+    "cpx": "^1.5.0",
     "electron": "^13.1.2"
   }
 }
