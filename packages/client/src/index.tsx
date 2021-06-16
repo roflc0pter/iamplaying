@@ -1,17 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { StartPage } from "./components/StartPage";
-import reportWebVitals from "./reportWebVitals";
+import { Root } from "./components/Root";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <StartPage />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+// const { ipcRenderer } = require("electron");
+// ipcRenderer.on("os-resources", (event, data) => {
+//   console.log("data", data);
+// });
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const App = () => {
+  return <Root></Root>;
+};
+
+ReactDOM.render(<App />, document.getElementById("root"));

@@ -1,43 +1,39 @@
 {
   "name": "client",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "author": "Emre Konar <m.emre.konar@gmail.com>",
+  "license": "Apache-2.0",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      "last 1 chrome version"
-    ],
-    "development": [
-      "last 1 chrome version"
-    ]
+    "webpack": "webpack",
+    "start": "webpack serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
     "bootstrap": "4.6.0",
-    "clsx": "^1.1.1",
-    "cross-env": "^7.0.3",
-    "process-list": "^2.0.0",
+    "electron": "^13.1.2",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
-    "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3",
-    "web-vitals": "^1.0.1"
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.7",
+    "add": "^2.0.6",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.3.1",
+    "path": "^0.12.7",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^9.2.3",
+    "webpack": "^5.39.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "yarn": "^1.22.10"
   }
 }
